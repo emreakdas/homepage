@@ -7,7 +7,7 @@ export default function Articles() {
     fetch("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@emreakdas")
     .then(response => response.json())
     .then(json => setArticles(json.items));
-}, []);
+  }, []);
 
   return (
     <div className="mb-20">
