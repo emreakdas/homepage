@@ -1,8 +1,21 @@
-# React + Vite
+Bu minimal tasarıma sahip web sitesi vite üzerine inşa edilmiş bir react projesidir.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Kullanmak ve Geliştirmek İçin
 
-Currently, two official plugins are available:
+### Repoyu Klonla
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+git clone https://github.com/emreakdas/vscode-svg-to-background-image-extension.git
+```
+
+### Bağımlılıkları Yükle
+
+```npm install``` veya ```pnpm install```
+
+### Projeyi Ayağa Kaldır
+
+```npm run dev``` veya ```pnpm run dev```
+
+### Hazırsın
+
+Projeyi geliştirmeye hazırsın!
