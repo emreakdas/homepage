@@ -19,3 +19,7 @@ git clone https://github.com/emreakdas/homepage.git
 ### Hazırsın
 
 Projeyi geliştirmeye hazırsın!
+
+### To-do
+- [ ] Geliştirme ortamı sayfası
+- [ ] Yer imleri sayfası
