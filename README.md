@@ -5,7 +5,7 @@ Bu minimal tasarıma sahip web sitesi vite üzerine inşa edilmiş bir react pro
 ### Repoyu Klonla
 
 ```
-git clone https://github.com/emreakdas/vscode-svg-to-background-image-extension.git
+git clone https://github.com/emreakdas/homepage.git
 ```
 
 ### Bağımlılıkları Yükle
