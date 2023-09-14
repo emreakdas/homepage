@@ -1,15 +1,14 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }],
-  "redirects": [
+  "rewrites": [
     {
       "source": "/(.*)",
       "has": [
         {
           "type": "host",
-          "value": "/(.*)"
+          "value": "undefined"
         }
       ],
-      "destination": "/(.*)"
+      "destination": "/"
     }
   ]
 }
