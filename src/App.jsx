@@ -9,7 +9,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
             <Route index={true} element={<Home />} />
-            <Route path="tools" element={<>Tools Page!</>} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
