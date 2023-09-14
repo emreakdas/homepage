@@ -1,21 +1,18 @@
-import React from "react";
-import Header from "./components/Header";
-import StartHero from "./components/StartHero";
-import Projects from "./components/Projects/List";
-import Articles from "./components/Articles";
-import More from "./components/More";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
+import Layout from "./layout/Index";
 
 function App() {  
   return (
-    <React.Fragment>
-      <Header />
-      <main>
-        <StartHero />
-        <Projects />
-        <Articles />
-        <More />
-      </main>
-    </React.Fragment>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+            <Route index={true} element={<Home />} />
+        </Route>
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
