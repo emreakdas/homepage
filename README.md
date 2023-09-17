@@ -21,5 +21,5 @@ git clone https://github.com/emreakdas/homepage.git
 Projeyi geliştirmeye hazırsın!
 
 ### To-do
-- [ ] Geliştirme ortamı sayfası
+- [x] ~~Geliştirme ortamı sayfası~~
 - [ ] Yer imleri sayfası
