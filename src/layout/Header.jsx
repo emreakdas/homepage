@@ -12,7 +12,7 @@ export default function Header() {
       <div>
         <NavLink
           to="/tools"
-          className={({ isActive }) => isActive || "text-gray-500"}
+          className={({ isActive }) => !isActive ? "text-gray-500" : "text-black"}
         >
           Tools
         </NavLink>
