@@ -54,6 +54,7 @@ function Tools() {
           {data.map((item, key) => (
             <a
               key={key}
+              target="_blank"
               onMouseEnter={handleMouseHover}
               onMouseLeave={handleMouseHover}
               href={item.url}
