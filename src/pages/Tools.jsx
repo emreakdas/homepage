@@ -2,6 +2,11 @@ import { Helmet } from "react-helmet-async";
 import { useEffect, useState } from "react";
 import tools from "../data/tools.json";
 
+const TOOLS_CATEGORY = {
+  macOS: "MacOS",
+  equipment: "Equipment",
+};
+
 function Tools() {
   const [tab, setTab] = useState("macOS");
   const [data, setData] = useState(tools[tab]);
@@ -9,16 +14,6 @@ function Tools() {
   useEffect(() => {
     setData(tools[tab]);
   }, [tab]);
-
-  function handleMouseHover({ target, type }) {
-    const element = target.previousElementSibling?.children[1];
-    target.children[1].style.borderBottomColor =
-      type == "mouseenter" ? "transparent" : "inherit";
-    if (element) {
-      element.style.borderBottomColor =
-        type == "mouseenter" ? "transparent" : "inherit";
-    }
-  }
 
   return (
     <>
@@ -31,34 +26,24 @@ function Tools() {
       </p>
       <div>
         <div className="flex items-center space-x-3 mb-10">
-          <div
-            style={{ backgroundColor: tab == "macOS" ? "#F2F2F2" : "initial" }}
-            onClick={() => setTab("macOS")}
-            href="#!"
-            className="py-[0.25rem] px-3 rounded-lg border cursor-pointer transition-all hover:!bg-[#F2F2F2]"
-          >
-            MacOS
-          </div>
-          <div
-            style={{
-              backgroundColor: tab == "equipment" ? "#F2F2F2" : "initial",
-            }}
-            onClick={() => setTab("equipment")}
-            href="#!"
-            className="py-[0.25rem] px-3 rounded-lg border cursor-pointer transition-all hover:!bg-[#F2F2F2]"
-          >
-            Equipment
-          </div>
+          {Object.keys(TOOLS_CATEGORY).map((tool) => (
+            <div
+              key={tool}
+              style={{ backgroundColor: tab == tool ? "#F2F2F2" : "initial" }}
+              onClick={() => setTab(tool)}
+              className="py-[0.25rem] px-3 rounded-lg border cursor-pointer transition-all hover:!bg-[#F2F2F2]"
+            >
+              {TOOLS_CATEGORY[tool]}
+            </div>
+          ))}
         </div>
         <div>
           {data.map((item, key) => (
             <a
               key={key}
               target="_blank"
-              onMouseEnter={handleMouseHover}
-              onMouseLeave={handleMouseHover}
               href={item.url}
-              className="flex items-center space-x-2  px-4 transition-all hover:bg-[#F2F2F2] hover:[&>div]:border-b-transparent hover:rounded-lg"
+              className="flex items-center space-x-2 px-4 transition-all hover:bg-[#F2F2F2] hover:rounded-lg [&:hover>div]:border-b-transparent [&:has(+:hover)>div]:border-b-transparent"
             >
               <img
                 src={item.image}
