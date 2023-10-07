@@ -1,4 +1,72 @@
 {
+    "all": [
+        {
+            "title": "Warp",
+            "desc": "Warp is a modern, Rust-based terminal with AI built in so you and your team can build great software, faster.",
+            "image": "/images/warp.png",
+            "url": "https://www.warp.dev/"
+        },
+        {
+            "title": "Notion",
+            "desc": "Your connected workspace for wiki, docs & projects.",
+            "image": "/images/notion.png",
+            "url": "https://notion.so"
+        },
+        {
+            "title": "VSCode",
+            "desc": "Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.",
+            "image": "/images/vscode.png",
+            "url": "https://code.visualstudio.com/"
+        },
+        {
+            "title": "Itsycal",
+            "desc": "Itsycal is a tiny menu bar calendar.",
+            "image": "/images/itsycal.png",
+            "url": "https://www.mowglii.com/itsycal/"
+        },
+        {
+            "title": "MonitorControl",
+            "desc": "Controls your external display brightness and volume and shows native OSD. Use menubar extra sliders or the keyboard, including native Apple keys!",
+            "image": "/images/monitor-control.png",
+            "url": "https://github.com/MonitorControl/MonitorControl"
+        },
+        {
+            "title": "Figma",
+            "desc": "The Collaborative Interface Design Tool",
+            "image": "/images/figma.png",
+            "url": "https://github.com/MonitorControl/MonitorControl"
+        },
+        {
+            "title": "Macbook Pro (M1 Pro) 14\"",
+            "image": "/images/macbook-pro.png",
+            "url": "https://www.apple.com/"
+        },
+        {
+            "title": "Airpods Pro 2nd",
+            "image": "/images/airpods-pro-2nd.png",
+            "url": "https://www.apple.com/"
+        },
+        {
+            "title": "iPhone 11",
+            "image": "/images/iphone-11.png",
+            "url": "https://www.apple.com/"
+        },
+        {
+            "title": "MX Keys for Mac",
+            "image": "/images/mx-keys.png",
+            "url": "https://www.logitech.com/"
+        },
+        {
+            "title": "MX Master 3",
+            "image": "/images/mx-master-3.png",
+            "url": "https://www.logitech.com/"
+        },
+        {
+            "title": "Dell U2720Q",
+            "image": "/images/dell-u2720q.png",
+            "url": "https://www.dell.com/"
+        }
+    ],
     "macOS": [
         {
             "title": "Warp",

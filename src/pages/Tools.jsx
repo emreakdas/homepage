@@ -3,12 +3,13 @@ import { useEffect, useState } from "react";
 import tools from "../data/tools.json";
 
 const TOOLS_CATEGORY = {
-  macOS: "MacOS",
+  all: "All",
   equipment: "Equipment",
+  macOS: "MacOS"
 };
 
 function Tools() {
-  const [tab, setTab] = useState("macOS");
+  const [tab, setTab] = useState("all");
   const [data, setData] = useState(tools[tab]);
 
   useEffect(() => {
