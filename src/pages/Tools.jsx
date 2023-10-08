@@ -54,7 +54,7 @@ function Tools() {
                 alt={item.title}
               />
               <div
-                className={`${key !== data.length - 1 ? "border-b" : ""} flex-1 ${
+                className={`${key !== data.length - 1 ? "border-b " : ""}flex-1 ${
                   item.desc ? "py-3" : "py-5"
                 } transition-all pointer-events-none`}
               >
