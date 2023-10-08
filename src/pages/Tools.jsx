@@ -41,7 +41,7 @@ function Tools() {
         <div>
           {data.map((item, key) => (
             <a
-              key={`${tab}-${key}`}
+              key={key}
               target="_blank"
               href={item.url}
               className="flex items-center space-x-2 px-4 transition-all hover:bg-[#F2F2F2] hover:rounded-lg [&:hover>div]:border-b-transparent [&:has(+:hover)>div]:border-b-transparent"
