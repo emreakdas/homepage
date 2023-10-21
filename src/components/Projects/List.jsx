@@ -16,7 +16,7 @@ export default function List() {
 
     return (
         <div className="mb-20">
-        <span className="mb-4 block">Projects</span>
+        <span className="mb-4 block">Projects & Contributions</span>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {repos.map((item) => (
             <ListItem
